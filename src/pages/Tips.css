@@ -1,0 +1,60 @@
+/* General Styles */
+.tips-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  
+  .tips-page h1 {
+    font-size: 2.5rem;
+    color: #e25822;
+    margin-bottom: 1rem;
+  }
+  
+  .tips-page p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Tips List */
+  .tips-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tip-card h2 {
+    font-size: 1.5rem;
+    color: #e25822;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tip-card p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tips-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+.recipe-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+/* Recipe Header */
+.recipe-header {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.recipe-header h1 {
+  font-size: 2.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+/* Recipe Info */
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.recipe-info p {
+  background: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Two-Column Layout */
+.recipe-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Ingredients & Method Sections */
+.recipe-ingredients, .recipe-method {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.recipe-ingredients h2, .recipe-method h2 {
+  color: #e25822;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* List Styles */
+.recipe-ingredients ul, .recipe-method ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-ingredients li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+}
+
+.recipe-method ol {
+  counter-reset: step-counter;
+}
+
+.recipe-method li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  position: relative;
+  counter-increment: step-counter;
+}
+
+.recipe-method li::before {
+  content: counter(step-counter);
+  background: #e25822;
+  color: white;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 2rem;
+}
+
+.back-button a {
+  text-decoration: none;
+  background: #e25822;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-button a:hover {
+  background: #c64718;
+}
